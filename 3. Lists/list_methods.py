@@ -4,8 +4,8 @@
 
 append_example = [ 'This', 'is', 'an', 'example']
 append_example.append('list')
-
 print(append_example) # append_example = ['This', 'is', 'an', 'example', 'list']
+
 
 # (ii) Plus(+) - When we need to add multiple items to a list
 
@@ -14,3 +14,16 @@ items_sold_new = items_sold + ["biscuits", "coffee"] # prints ['cake', 'cookie',
 
 my_list = [1, 2, 3, 4]
 my_list_new = my_list + [5, 6] # prints [1, 2, 3, 4, 5, 6]
+
+
+# (iii) .remove() - it allows us to remove an element from a list, example:
+
+shopping_line = ["Cole", "Kip", "Chris", "Sylvana"]
+shopping_line.remove("Chris")
+print(shopping_line) #prints "Cole", "Kip", "Sylvana"
+
+# if we use this on a list that has duplicate elements, only the first instance of that element is removed:
+# Create a list
+shopping_line = ["Cole", "Kip", "Chris", "Sylvana", "Chris"]
+shopping_line.remove("Chris")
+print(shopping_line) #prints "Cole", "Kip", "Sylvana", "Chris"
